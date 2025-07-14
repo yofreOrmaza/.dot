@@ -3,23 +3,23 @@
 
 / (root)
 
--> .xprofile (file) ✓
+📄 .xprofile (file) ✓
 
--> .config (folder)
+📂 .config (folder)
 
-    -> bspwm (folder) ✓
+- 📁 bspwm (folder) ✓
 
-    -> sxhkd (folder) ✓
+- 📁 sxhkd (folder) ✓
 
-    -> polybar (folder) ✓
+- 📁 polybar (folder) ✓
 
-    -> kitty (folder) ✓
+- 📁 kitty (folder) ✓
 
--> Backgrounds (folder) ✓
+📁 Backgrounds (folder) ✓
 
--> Screenshots (folder) ✓ (solo la carpeta, para ser enviada a repo y luego si ignorarla para que no se suban las screenshots personales, pero si se pueda obtener la carpeta para la herramienta de Scrot)
+📁 Screenshots (folder) ✓ (solo la carpeta, para ser enviada a repo y luego si ignorarla para que no se suban las screenshots personales, pero si se pueda obtener la carpeta para la herramienta de Scrot)
 
--> carpetaZeroDistroUSB (folder) [ ] Crear comando de variable de entorno con la opción (osea, un condicional con bash) de montar o desmontar dispositivos usb, y luego si mostrarlos
+📁 carpetaZeroDistroUSB (folder) [ ] Crear comando de variable de entorno con la opción (osea, un condicional con bash) de montar o desmontar dispositivos usb, y luego si mostrarlos
 
 ---
 
