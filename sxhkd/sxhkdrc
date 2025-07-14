@@ -137,4 +137,4 @@ XF86MonBrightnessDown
 
 # Take a screenshot
 @Print
-   scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%H%S-$wx$h_scrot.png
+   scrot -s --line mode=edge ~/Screenshots/%Y-%m-%d_%H%H%S-$wx$h_scrot.png
