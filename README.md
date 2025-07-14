@@ -40,3 +40,21 @@ Reemplazar/Pegar el archivo 40-libinput.conf en la ruta /etc/X11/xorg.conf.d/
 ## 2. Archivo para establecer distribución de teclado permanente
 
 Reemplazar/Pegar el archivo 00-keyboard.conf en la ruta /etc/X11/xorg.conf.d/
+
+## AWUSB
+
+### 1. Darle permisos al archivo ```awusb```
+
+```sh
+chmod +x ~/awusb
+```
+
+### 2. Muévelo a ```/usr/local/bin```
+
+sudo mv ~/awusb /usr/local/bin/awusb
+
+### 3. Listo. Usar :)
+
+Para montar un dispositivo usb ```awusb mount``` y para desmontar ```awusb unmount```
+
+![](./Screenshots/AWUSBPREVIEW.png)
