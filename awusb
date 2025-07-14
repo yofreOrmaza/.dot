@@ -1,0 +1,27 @@
+#!/bin/bash
+
+clear
+
+echo "                          "
+echo " ███████████  ███████████ "
+echo " ██       ██           ██ "
+echo " ██       ██  ██       ██ "
+echo " ██       ██  ██       ██ "
+echo " ███████████  ███████████ "
+echo "          ZD  USB         "
+echo "                          "
+
+if [[ "$1" != "mount" && "$1" != "unmount" ]]; then
+    echo
+    echo "Uso: awusb [mount|unmount]"
+    exit 1
+fi
+
+echo
+lsblk
+echo
+echo "¿Qué dispositivo USB deseas $1?"
+
+read ZeroDistroUserDevice
+
+udisksctl $1 -b /dev/$ZeroDistroUserDevice
