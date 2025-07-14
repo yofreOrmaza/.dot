@@ -2,6 +2,10 @@
 
 ![](./Screenshots/AWFFPREVW.png)
 
+![](./Screenshots/openingGimp.png)
+
+![](./Screenshots/favoriteBackground.png)
+
 Yeah, It's AWFF
 
 ## Contenido
