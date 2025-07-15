@@ -4,7 +4,13 @@
 
 ![](./Screenshots/openingGimp.png)
 
-![](./Screenshots/favoriteBackground.png)
+![](./Screenshots/AWFFSCREENSHOTPREVIEW.png)
+
+## AWFF (Polybar)
+
+![](./Screenshots/AWFFPolybarPreview.png)
+
+> Comando xrandr para determinar en el archivo ```.config/polybar/config.ini``` el screen determinado
 
 Yeah, It's AWFF
 
