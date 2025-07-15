@@ -79,7 +79,7 @@ mkdir -p ~/.local/share/rofi/themes/
 
 ### 4. Copy your desired theme to ~/.local/share/rofi/themes folder:
 
-cp themes/<your-selected-theme> ~/.local/share/rofi/themes/
+cp themes/your-selected-theme ~/.local/share/rofi/themes/
 
 > I  liked spotlight.rasi OR windows11-list-light.rasi
 
