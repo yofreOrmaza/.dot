@@ -1,5 +1,4 @@
 sxhkd &
 nitrogen --restore &
 xset b off &
-picom &
 exec bspwm

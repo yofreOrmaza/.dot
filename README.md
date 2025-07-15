@@ -65,13 +65,11 @@ Para montar un dispositivo usb ```awusb mount``` y para desmontar ```awusb unmou
 
 ## Rofi
 
-## 1. Install Rofi
-
-sudo pacman -S picom
+### 1. Install Rofi
 
 sudo pacman -S rofi
 
-## 2. Entrar a la carpeta REPOS/ROFITHEMES 
+### 2. Entrar a la carpeta REPOS/ROFITHEMES 
 
 cd REPOS/ROFITHEMES/
 
@@ -83,14 +81,16 @@ mkdir -p ~/.local/share/rofi/themes/
 
 cp themes/your-selected-theme ~/.local/share/rofi/themes/
 
-> I  liked spotlight.rasi OR windows11-list-light.rasi
+> I  liked windows11-list-light.rasi OR windows11-list-dark.rasi
 
 ### 5. Select theme in Rofi
 
 Ingrsar en la terminal ```rofi -show run```, buscar ```rofi-theme-selector```, presionar Enter, seleccionar el tema de Rofi a establecer, y finalmente para confirmarlo presionar Alt+a
 
+### 6. Agregarlo al archivo sxhkd
 
-## Agregarlo al archivo sxhkd
-# Lanzar rofi mostrando iconos de aplicaciones
+
+```sh
 super + @space
     rofi -show drun -show-icons
+```

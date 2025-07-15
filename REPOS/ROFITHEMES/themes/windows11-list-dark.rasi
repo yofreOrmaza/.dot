@@ -29,7 +29,7 @@ window {
   y-offset : -4px;
 
   background-color : @bg1;
-  border-radius    : 8px;
+  border-radius    : 0px;
 }
 
 mainbox {
