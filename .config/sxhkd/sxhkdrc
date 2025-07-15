@@ -7,8 +7,13 @@ super + Return
 	kitty
 
 # program launcher
-super + @space
+super + d
 	dmenu_run
+
+# Lanzar rofi mostrando iconos de aplicaciones
+super + @space
+	rofi -show drun -show-icons
+
 
 # make sxhkd reload its configuration files:
 super + Escape

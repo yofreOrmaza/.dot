@@ -41,6 +41,8 @@ Reemplazar/Pegar el archivo 40-libinput.conf en la ruta /etc/X11/xorg.conf.d/
 
 Reemplazar/Pegar el archivo 00-keyboard.conf en la ruta /etc/X11/xorg.conf.d/
 
+---
+
 ## AWUSB
 
 ### 1. Darle permisos al archivo ```awusb```
@@ -58,3 +60,35 @@ sudo mv ~/awusb /usr/local/bin/awusb
 Para montar un dispositivo usb ```awusb mount``` y para desmontar ```awusb unmount```
 
 ![](./Screenshots/AWUSBPREVIEW.png)
+
+---
+
+## Rofi
+
+## 1. Install Rofi
+
+sudo pacman -S rofi
+
+## 2. Entrar a la carpeta REPOS/ROFITHEMES 
+
+cd REPOS/ROFITHEMES/
+
+### 3. If you don't have the directories needed for the install create them with:
+
+mkdir -p ~/.local/share/rofi/themes/
+
+### 4. Copy your desired theme to ~/.local/share/rofi/themes folder:
+
+cp themes/<your-selected-theme> ~/.local/share/rofi/themes/
+
+> I  liked spotlight.rasi OR windows11-list-light.rasi
+
+### 5. Select theme in Rofi
+
+Ingrsar en la terminal ```rofi -show run```, buscar ```rofi-theme-selector```, presionar Enter, seleccionar el tema de Rofi a establecer, y finalmente para confirmarlo presionar Alt+a
+
+
+## Agregarlo al archivo sxhkd
+# Lanzar rofi mostrando iconos de aplicaciones
+super + @space
+    rofi -show drun -show-icons
