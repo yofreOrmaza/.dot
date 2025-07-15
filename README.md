@@ -67,6 +67,8 @@ Para montar un dispositivo usb ```awusb mount``` y para desmontar ```awusb unmou
 
 ## 1. Install Rofi
 
+sudo pacman -S picom
+
 sudo pacman -S rofi
 
 ## 2. Entrar a la carpeta REPOS/ROFITHEMES 
