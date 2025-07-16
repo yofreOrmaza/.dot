@@ -6,6 +6,10 @@
 
 ![](./Screenshots/AWFFSCREENSHOTPREVIEW.png)
 
+## AWFF Kitty
+
+![](./Screenshots/AWFFPREVIEWKITTY.png)
+
 ## AWFF (Polybar)
 
 ![](./Screenshots/AWFFPolybarPreview.png)
