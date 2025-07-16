@@ -143,3 +143,9 @@ XF86MonBrightnessDown
 # Take a screenshot
 @Print
    scrot -s --line mode=edge ~/Screenshots/%Y-%m-%d_%H%H%S-$wx$h_scrot.png
+
+# Silenciar/Activar MIC
+# Silenciar o activar micrófono
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
