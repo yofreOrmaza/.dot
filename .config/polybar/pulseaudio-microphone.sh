@@ -6,7 +6,8 @@ status() {
   if [ "$MUTED" = "yes" ]; then
     echo "MIC%{F#FF0B30}OFF%{F-}"
   else
-    pacmd list-sources | grep "\* index:" -A 7 | grep volume | awk -F/ '{print $2}' | tr -d ' '  
+    VOLUME=$(pacmd list-sources | grep "\* index:" -A 7 | grep volume | awk -F/ '{print $2}' | tr -d ' ')
+    echo "MIC%{F#00FFAB}$VOLUME%{F-}"
   fi
 }
 
