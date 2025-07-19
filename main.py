@@ -75,7 +75,7 @@ def main():
     # Darle permisos al archivo de ejecución script
     ejecutarUnComandoEnRaiz("chmod +x dotusb")
     # Copiar/Pegar archivo ejecutable en directorio /usr/local/bin para que sea un comando del sistema
-    ejecutarUnComandoEnRaiz("cp -r dotusb /usr/local/bin")
+    ejecutarUnComandoEnRaiz("sudo cp -r dotusb /usr/local/bin")
     print("Puedes usar el comando dotusb mount/unmount en terminal para montar y desmontar Pendrives USB")
     # FIN Montar/Desmontar Dispositivos USB (dotusb)
 
@@ -84,7 +84,7 @@ def main():
     ejecutarUnComandoEnRaiz("mkdir -p ~/.local/share/rofi")
     ejecutarUnComandoEnRaiz("mkdir -p ~/.local/share/rofi/themes/")
     #
-    ejecutarUnComandoEnRaiz("REPOS/ROFITHEMES/themes/windows11-list-light.rasi ~/.local/share/rofi/themes/")
+    ejecutarUnComandoEnRaiz("cp -r REPOS/ROFITHEMES/themes/windows11-list-light.rasi ~/.local/share/rofi/themes/")
     # FIN Rofi
 
     # INICIO Kitty
