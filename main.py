@@ -14,7 +14,7 @@ def main():
     # Creación carpeta .config
     ejecutarUnComandoEnRaiz("mkdir ~/.config")
     # Creación carpeta Screenshots (útil para Scrot)
-    ejecutarUnComando("mkdir ~/Screenshots")
+    ejecutarUnComandoEnRaiz("mkdir ~/Screenshots")
     # Copiar/Pegar carpeta Backgrounds
     copiarYPegarCarpeta("~/.dot/Backgrounds", "~/")
     
