@@ -1,5 +1,5 @@
 from utils.system import entornoGrafico, displayManager, appsAInstalar
-from utils.system import ejecutarUnComando
+from utils.system import ejecutarUnComando, ejecutarUnComandoEnRaiz
 from utils.files import copiarYPegarArchivo, copiarYPegarCarpeta, copiarYPegarArchivoSUDO, copiarYPegarCarpetaSUDO
 #from utils.network import clonar_repo
 
@@ -12,7 +12,7 @@ def main():
     copiarYPegarArchivo(".xprofile", "~") # Archivo .xprofile
     
     # Creación carpeta .config
-    ejecutarUnComando("mkdir ~/.config")
+    ejecutarUnComandoEnRaiz("mkdir ~/.config")
     # Creación carpeta Screenshots (útil para Scrot)
     ejecutarUnComando("mkdir ~/Screenshots")
     # Copiar/Pegar carpeta Backgrounds
