@@ -47,7 +47,7 @@ def main():
 
     # INICIO Instalar NVM
     curlDeNVM = "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash"
-    ejecutarUnComandoE(curlDeNVM)
+    ejecutarUnComando(curlDeNVM)
     input(f"Asegurate constantemente de que el curlDeNVM={curlDeNVM} este actualizado, lo puedes actualizar cambiando su valor por el más actual en la variable curlDeNVM [ENTER]: ")
     # Copiar/Pegar archivo .bashrc
     ejecutarUnComandoEnRaiz("cp -r .bashrc ~/")
