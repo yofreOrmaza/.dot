@@ -29,14 +29,14 @@ def main():
 
     # INICIO Establecer distribución de teclado
     # Copiar/Pegar archivo de establecimiento distribución de teclado permanente
-    ejecutarUnComandoEnRaiz("cp -r 00-keyboard.conf /etc/X11/xorg.conf.d/")
+    ejecutarUnComandoEnRaiz("sudo cp -r 00-keyboard.conf /etc/X11/xorg.conf.d/")
     # INICIO Establecer distribución de teclado
 
     # INICIO Laptop
     # Copiar/Pegar archivo de panel tactil laptop configuración
     equipo = input("¿Este equipo es una Laptop/Portatil?: (y/n)")
     if (equipo == "y"):
-        ejecutarUnComandoEnRaiz("cp -r 40-libinput.conf /etc/X11/xorg.conf.d/")
+        ejecutarUnComandoEnRaiz("sudo cp -r 40-libinput.conf /etc/X11/xorg.conf.d/")
         print("Panel tactil configurado correctamente")
     elif (equipo == "n"):
         print("Ok")
