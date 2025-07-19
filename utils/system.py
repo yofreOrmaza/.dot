@@ -5,7 +5,7 @@ def activarServicio(servicio):
     subprocess.run(["sudo", "systemctl", "enable", nombreServicio])
 
 def ejecutarUnComando(comando):
-    subprocess.run([comando])
+    subprocess.run(shlex.split(comando))
 
 def entornoGrafico():
     paquetes = ["xorg-server", "xorg-apps", "xorg-xinit"]
