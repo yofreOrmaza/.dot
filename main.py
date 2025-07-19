@@ -9,7 +9,7 @@ def main():
     displayManager()
     appsAInstalar()
 
-    copiarYPegarArchivo("./.xprofile", "~") # Archivo .xprofile
+    copiarYPegarArchivo("~/.dot/.xprofile", "~") # Archivo .xprofile
     
     # Creación carpeta .config
     ejecutarUnComando("mkdir ~/.config")
