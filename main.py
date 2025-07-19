@@ -1,3 +1,4 @@
+import subprocess
 from utils.system import entornoGrafico, displayManager, appsAInstalar
 from utils.system import ejecutarUnComando, ejecutarUnComandoEnRaiz
 from utils.files import copiarYPegarArchivo, copiarYPegarCarpeta, copiarYPegarArchivoSUDO, copiarYPegarCarpetaSUDO
