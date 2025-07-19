@@ -52,7 +52,7 @@ def main():
     # Copiar/Pegar archivo .bashrc
     ejecutarUnComandoEnRaiz("cp -r .bashrc ~/")
     # Ejecutar comando para aplicar cambios del .bashrc
-    ejecutarUnComandoEnRaiz("source ~/.bashrc")
+    subprocess.run(["bash", "-c", "source ~/.bashrc"])
     guiaInstalarNodeNpmConNVM = input("¿Deseas revisar una rápida guia sobre como instalar NodeJs/Npm con NVM? (y/n): ")
     if (guiaInstalarNodeNpmConNVM == "y"):
         print("1. nvm ls-remote (listar versiones de nodejs disponibles)\n2. nvm install v<version> (instalar la versión deseada reemplazando <version> con el número de la versión)\n3. nvm use <version> (Activar la versión de nodejs instalada)")
