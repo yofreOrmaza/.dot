@@ -1,11 +1,16 @@
 import subprocess
 import shlex
+import os
 
 def activarServicio(servicio):
     nombreServicio = f"{servicio}.service"
     subprocess.run(["sudo", "systemctl", "enable", nombreServicio])
 
 def ejecutarUnComando(comando):
+    subprocess.run(shlex.split(comando))
+
+def ejecutarUnComandoEnRaiz(comando):
+    comando = comando.replace("~", os.path.expanduser("~"))
     subprocess.run(shlex.split(comando))
 
 def entornoGrafico():
