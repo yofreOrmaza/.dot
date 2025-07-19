@@ -8,12 +8,12 @@ echo " ██       ██           ██ "
 echo " ██       ██  ██       ██ "
 echo " ██       ██  ██       ██ "
 echo " ███████████  ███████████ "
-echo "          ZD  USB         "
+echo "         DOT  USB         "
 echo "                          "
 
 if [[ "$1" != "mount" && "$1" != "unmount" ]]; then
     echo
-    echo "Uso: awusb [mount|unmount]"
+    echo "Uso: dotusb [mount|unmount]"
     exit 1
 fi
 
