@@ -18,6 +18,8 @@ def main():
     ejecutarUnComandoEnRaiz("mkdir ~/Screenshots")
     # Copiar/Pegar carpeta Backgrounds
     ejecutarUnComandoEnRaiz("cp -r Backgrounds ~/")
+    # Creación carpeta AUR (Útil para automatizar instalaciones de AUR y que se guarden en dicha carpeta AUR)
+    ejecutarUnComandoEnRaiz("mkdir ~/AUR")
     
     # INICIO bspwm, sxhkd
     # Copiar/Pegar carpetas de bspwm, sxhkd en ~/.config del equipo
