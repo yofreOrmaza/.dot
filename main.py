@@ -109,7 +109,7 @@ def main():
     ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/yay.git")
     ruta = os.path.expanduser("~/AUR/yay")
     subprocess.run(f"cd {ruta} && makepkg -si --noconfirm", shell=True)
-    ejecutarUnComandoEnRaiz("cd ~/AUR/yay && makepkg -si")
+    #ejecutarUnComandoEnRaiz("cd ~/AUR/yay && makepkg -si")
     # FIN Instalación yay por AUR
 
     # INICIO Instalaciones por Yay
