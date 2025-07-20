@@ -68,7 +68,7 @@ def displayManager():
 
 
 def appsAInstalar():
-    paquetes = ["ttf-jetbrains-mono-nerd", "bash", "dmenu", "nitrogen", "fastfetch", "kitty", "xfce4", "arandr", "polybar", "git", "brightnessctl", "pcmanfm", "firefox", "openssh", "unzip", "udisks2", "scrot", "kolourpaint", "pipewire", "pulseaudio", "pavucontrol", "xdg-user-dirs", "btop", "libinput", "mpv", "okular", "flatpak", "rofi", "bluez", "bluez-utils", "blueman"]
+    paquetes = ["ttf-jetbrains-mono-nerd", "bash", "dmenu", "nitrogen", "kitty", "xfce4", "arandr", "polybar", "git", "brightnessctl", "pcmanfm", "firefox", "openssh", "unzip", "udisks2", "scrot", "kolourpaint", "pipewire", "pulseaudio", "pavucontrol", "xdg-user-dirs", "btop", "libinput", "mpv", "okular", "flatpak", "rofi", "bluez", "bluez-utils", "blueman"]
     subprocess.run(["sudo", "pacman", "-S", "--noconfirm"] + paquetes)
 
     subprocess.run(["xdg-user-dirs-update"], cwd="/") # como ya se instalo xdg-user-dirs, pues este comando funciona para que el programa hago su tarea que es crea los directorios base del sistema
