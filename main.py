@@ -93,6 +93,25 @@ def main():
     ejecutarUnComandoEnRaiz("cp -r .config/kitty ~/.config/")
     # FIN Kitty
 
+    # INICIO Creación carpeta AUR
+    ejecutarUnComandoEnRaiz("mkdir ~/AUR")
+    # FIN Creación carpeta AUR
+    
+    # INICIO Instalación packages por AUR
+    print("Instalando Microsoft Edge from AUR...")
+    ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/microsoft-edge-stable-bin.git")
+    ejecutarUnComandoEnRaiz("cd ~/AUR/microsoft-edge-stable-bin && makepkg -si")
+
+    print("Instalando Yay from AUR...")
+    ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/yay.git")
+    ejecutarUnComandoEnRaiz("cd ~/AUR/yay && makepkg -si")
+    # FIN Instalación yay por AUR
+
+    # INICIO Instalaciones por Yay
+    print("Instalando Fastfetch por Yay...")
+    ejecutarUnComandoEnRaiz("yay -S fastfetch-git --noconfirm")
+    # FIN Instalaciones por Yay
+
     # INICIO FastFetch
     ejecutarUnComandoEnRaiz("cp -r .config/fastfetch ~/.config/")
     # FIN FastFetch
