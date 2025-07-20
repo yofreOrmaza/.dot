@@ -102,11 +102,13 @@ def main():
     print("Instalando Microsoft Edge from AUR...")
     ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/microsoft-edge-stable-bin.git")
     ruta = os.path.expanduser("~/AUR/microsoft-edge-stable-bin")
-    subprocess.run(f"cd {ruta} && makepkg -si", shell=True)
+    subprocess.run(f"cd {ruta} && makepkg -si --noconfirm", shell=True)
     #ejecutarUnComandoEnRaiz("cd ~/AUR/microsoft-edge-stable-bin && makepkg -si")
 
     print("Instalando Yay from AUR...")
     ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/yay.git")
+    ruta = os.path.expanduser("~/AUR/yay")
+    subprocess.run(f"cd {ruta} && makepkg -si --noconfirm", shell=True)
     ejecutarUnComandoEnRaiz("cd ~/AUR/yay && makepkg -si")
     # FIN Instalación yay por AUR
 
