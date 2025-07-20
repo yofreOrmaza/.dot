@@ -1,4 +1,5 @@
 import subprocess
+import os
 from utils.system import entornoGrafico, displayManager, appsAInstalar
 from utils.system import ejecutarUnComando, ejecutarUnComandoEnRaiz
 from utils.files import copiarYPegarArchivo, copiarYPegarCarpeta, copiarYPegarArchivoSUDO, copiarYPegarCarpetaSUDO
@@ -100,7 +101,9 @@ def main():
     # INICIO Instalación packages por AUR
     print("Instalando Microsoft Edge from AUR...")
     ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/microsoft-edge-stable-bin.git")
-    ejecutarUnComandoEnRaiz("cd ~/AUR/microsoft-edge-stable-bin && makepkg -si")
+    ruta = os.path.expanduser("~/AUR/microsoft-edge-stable-bin")
+    subprocess.run(f"cd {ruta} && makepkg -si", shell=True)
+    #ejecutarUnComandoEnRaiz("cd ~/AUR/microsoft-edge-stable-bin && makepkg -si")
 
     print("Instalando Yay from AUR...")
     ejecutarUnComandoEnRaiz("git -C ~/AUR clone https://aur.archlinux.org/yay.git")
