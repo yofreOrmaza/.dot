@@ -82,9 +82,9 @@ def main():
     print("Puedes usar el comando dotusb mount/unmount en terminal para montar y desmontar Pendrives USB")
     # FIN Montar/Desmontar Dispositivos USB (dotusb)
     # INICIO Ejecutable conexiones bluetooth
-    ejecutarUnComandoEnRaiz("chmod +x bluedot")
+    ejecutarUnComandoEnRaiz("chmod +x dotblue")
     # Copiar/Pegar archivo ejecutable (bluedot para manejar conexiones por bluetooth) en directorio /usr/local/bin para que sea un comando del sistema
-    ejecutarUnComandoEnRaiz("sudo cp -r bluedot /usr/local/bin")
+    ejecutarUnComandoEnRaiz("sudo cp -r dotblue /usr/local/bin")
     print("Bluedot permite conectar tus dispositivos bluetooth de forma rapida")
     # FIN Ejecutable conexiones bluetooth
 
