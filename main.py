@@ -81,6 +81,12 @@ def main():
     ejecutarUnComandoEnRaiz("sudo cp -r dotusb /usr/local/bin")
     print("Puedes usar el comando dotusb mount/unmount en terminal para montar y desmontar Pendrives USB")
     # FIN Montar/Desmontar Dispositivos USB (dotusb)
+    # INICIO Ejecutable conexiones bluetooth
+    ejecutarUnComandoEnRaiz("chmod +x bluedot")
+    # Copiar/Pegar archivo ejecutable (bluedot para manejar conexiones por bluetooth) en directorio /usr/local/bin para que sea un comando del sistema
+    ejecutarUnComandoEnRaiz("sudo cp -r bluedot /usr/local/bin")
+    print("Bluedot permite conectar tus dispositivos bluetooth de forma rapida")
+    # FIN Ejecutable conexiones bluetooth
 
     # INICIO Rofi
     # Crear directorio de rofi themes
