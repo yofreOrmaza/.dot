@@ -1,5 +1,9 @@
 # AWFF
 
+![](./Screenshots/screenshotUpdatePolybar2.png)
+
+> Update Polybar 21-Jul-25
+
 ![](./Screenshots/AWFFPREVW.png)
 
 ![](./Screenshots/openingGimp.png)
