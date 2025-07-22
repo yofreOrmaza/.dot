@@ -1,8 +1,8 @@
 # AWFF
 
-![](./Screenshots/screenshotUpdatePolybar2.png)
-
 > Update Polybar 21-Jul-25
+
+![](./Screenshots/screenshotUpdatePolybar2.png)
 
 ![](./Screenshots/AWFFPREVW.png)
 
